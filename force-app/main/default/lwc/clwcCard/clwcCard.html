@@ -1,0 +1,12 @@
+<template>
+    <div class={rootClass} id="card">
+        <div class="title-bar" if:true={titled}>
+            <slot class="slot" name="Title">
+            </slot>
+        </div>
+        <div>
+            <slot class="slot" name="Card">
+            </slot>
+        </div>
+    </div>
+</template>

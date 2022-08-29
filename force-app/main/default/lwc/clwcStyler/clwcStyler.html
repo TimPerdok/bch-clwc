@@ -1,0 +1,24 @@
+<template>
+  <div if:true={shouldShow}>
+
+    <div class={badgeClass} onmouseenter={openTooltip} onmouseleave={closeTooltip}>
+      <div class="badge-content">
+        <div class="column">
+          <svg class="icon">
+            <use xlink:href={badgeIcon}></use>
+          </svg>
+        </div>
+        <div class="title">{label}</div>
+      </div>
+    </div>
+    <section class={tooltipClass} style="margin-top:12px" role="alert">
+      <div class="slds-popover__body">
+        <div class="slds-media">
+          <div id="error-message" class="slds-media__body">
+            {tooltipContent}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>

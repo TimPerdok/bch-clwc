@@ -1,0 +1,17 @@
+<template>
+    <div class={buttonClass} style={iconDivSize} onclick={toggleDrawer} id="button">
+        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={iconSize} height={iconSize}>
+            <path fill={iconColor}
+                d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
+            </path>
+        </svg>
+    </div>
+    <div style={overlayStyling} class="overlay" onclick={toggleDrawer} if:true={drawerOpen}>
+        <span class="overlay-text" if:true={overlayText}>{overlayText}</span>
+    </div>
+    <div  class={drawerClass}>
+        <slot class="slot" id="slot" name="Drawer">
+
+        </slot>
+    </div>
+</template>

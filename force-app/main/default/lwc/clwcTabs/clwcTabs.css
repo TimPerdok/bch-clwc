@@ -1,0 +1,19 @@
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.border-proxy {
+    flex-grow: 1;
+}
+
+.head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.root {
+    height: 100%;
+    width: 100%;
+}

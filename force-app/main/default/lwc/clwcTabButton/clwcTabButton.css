@@ -1,0 +1,11 @@
+.tab-button {
+    padding: 8px 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+
+.tab-button:hover {
+    cursor: pointer;
+}

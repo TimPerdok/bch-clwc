@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Navigation Menu</masterLabel>
+    <targets>
+        <target>
+            lightningCommunity__Default
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="menuName" label="Navigation Menu Name" type="String" description="Enter the name of the navigation menu you want to generate tabs for" />
+            <property name="activeTabName" label="Active tab name" type="String" description="Changes the active tab" />
+            <property name="align" label="Alignment" type="String" description="Alignment of the navigation menu" datasource="Horizontal,Vertical" />
+
+            <property name="itemHeight" label="Height" type="String" />
+            <property name="itemWidth" label="Width" type="String" />
+            <property name="itemColor" label="Text Color" type="Color" />
+            <property name="activeItemColor" label="Active Text Color" type="Color" />
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

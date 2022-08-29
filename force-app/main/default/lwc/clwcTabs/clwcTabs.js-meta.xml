@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>
+            lightningCommunity__Default
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="activeColor" label="Active button color" description="Color of the active tab button" type="Color" />
+            <property name="inactiveColor" label="Inactive button color" description="Color of the inactive tab button" type="Color" />
+            <property name="backgroundColor" label="Background Color" description="Background color" type="Color" />
+            <property name="borderColor" label="Border Color" description="Border color" type="Color" />
+            <property name="buttonGap" label="Tab Button Gap" description="Button Gap" type="String" />
+            <property name="tabName_1" label="Tab name 1" required="true" default="Tab 1" type="String" />
+            <property name="tabName_2" label="Tab name 2" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_3" label="Tab name 3" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_4" label="Tab name 4" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_5" label="Tab name 5" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_6" label="Tab name 6" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_7" label="Tab name 7" description="Leave empty if unnecessary" type="String" />
+            <property name="tabName_8" label="Tab name 6" description="Leave empty if unnecessary" type="String" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

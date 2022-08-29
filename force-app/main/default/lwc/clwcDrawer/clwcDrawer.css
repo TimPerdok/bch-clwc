@@ -1,0 +1,36 @@
+.drawer {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow-y: auto;
+}
+
+.drawer-button:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 9999998;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: initial;
+}
+
+.overlay-text {
+    width: 200px;
+    text-align: center;
+}

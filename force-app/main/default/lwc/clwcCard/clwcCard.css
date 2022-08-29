@@ -1,0 +1,12 @@
+.clwc-card-builder {
+    padding-top: 12px !important;
+}
+
+.slot {
+    height: 100%;
+    width: 100%;
+}
+
+.title-bar {
+    min-height: 16px
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Card</masterLabel>
+    <targets>
+        <target>
+            lightningCommunity__Default
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="proxy_className" label="Class name" description="" type="String" />
+            <property name="titled" label="Title Card" description="Whether this card should have a slot for a Title" type="Boolean" />
+            <property name="style_background_color" label="Background Color" description="Color of the cards background" type="Color" />
+            <property name="shadow" label="Shadow" description="" type="String" default="Medium" datasource="None,Small,Medium,Large" />
+            <property name="style_border_radius" label="Border radius" description="How rounded the borders should be" type="String" default="16px" />
+            <property name="style_height" label="Height" description="" type="String" />
+            <property name="style_padding" label="Padding" description="" type="String" default="8px" />
+            <property name="style_bottom_margin" label="Bottom Margin" description="" type="String" default="32px" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,43 @@
+<template>
+    <div class="root">
+        <div class="head">
+            <div class="button-container">
+                <template for:each={tabs} for:item="tab">
+                    <c-clwc-tab-button rerender={rerender} tab={tab} ontabswitch={handleClick} key={tab.index}></c-clwc-tab-button>
+                </template>
+            </div>
+            <div class="border-proxy">
+
+            </div>
+        </div>
+        <div class="body">
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab1"></slot>
+            </c-clwc-tab-content>
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab2"></slot>
+            </c-clwc-tab-content>
+
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab3"></slot>
+            </c-clwc-tab-content>
+
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab4"></slot>
+            </c-clwc-tab-content>
+
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab5"></slot>
+            </c-clwc-tab-content>
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab6"></slot>
+            </c-clwc-tab-content>
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab7"></slot>
+            </c-clwc-tab-content>
+            <c-clwc-tab-content rerender={rerender} tab={nextTab}>
+                <slot slot="content" name="tab8"></slot>
+            </c-clwc-tab-content>
+        </div>
+    </div>
+</template>

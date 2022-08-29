@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Hidden</masterLabel>
+    <targets>
+        <target>
+            lightningCommunity__Default
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="proxy_className" label="Class name" description="" type="String" />
+            <property name="breakpointCondition" label="Breakpoint Condition" description="" type="String" datasource=",Above,Below or equal to" />
+            <property name="breakpoint" label="Breakpoint" description="" type="String" datasource=",Mobile (600px), Tablet (768px), Desktop (992px)" />
+
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

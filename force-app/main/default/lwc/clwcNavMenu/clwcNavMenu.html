@@ -1,0 +1,9 @@
+<template>
+  <div class={rootClass}>
+    <template for:each={menuItems} for:item="item">
+      <c-clwc-nav-item color={itemColor} parent-id={id} height={itemHeight} width={itemWidth} key={item.id} item={item}>
+      </c-clwc-nav-item>
+    </template>
+  </div>
+  <template if:true={showWarning}> {warning} </template>
+</template>

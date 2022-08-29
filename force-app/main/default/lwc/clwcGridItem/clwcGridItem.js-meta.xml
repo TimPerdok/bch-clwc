@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Grid Item</masterLabel>
+    <targets>
+        <target>
+            lightningCommunity__Default
+        </target>
+        <target>
+            lightningCommunity__Page
+        </target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="proxy_className" label="Class name" description="" type="String" />
+            <property name="fullWidth" label="Content full width" type="Boolean" default="true" />
+            
+            <!-- add  min="0" max="12"  -->
+            <property name="span" label="Column span" description="How wide the column should be from 1 to 12. Leave empty if using fixed width" type="Integer"/>
+            <property name="width" label="Fixed width" description="A fixed width this column should have. Use this with column span empty" type="String" />
+            <property name="height" label="Fixed height" description="A fixed height this column should have" type="String" />
+
+            <property name="tabletSpan" label="Tablet Override - Column span" description="How wide the column should be from 1 to 12. Leave empty if using fixed width" type="Integer" />
+            <property name="tabletWidth" label="Tablet Override - Fixed width" description="A fixed width this column should have. Use this with column span empty" type="String" />
+            <property name="tabletHeight" label="Tablet Override - Fixed height" description="A fixed height this column should have" type="String" />
+            
+            <property name="mobileSpan" label="Mobile Override - Column span" description="How wide the column should be from 1 to 12. Leave empty if using fixed width" type="Integer" />
+            <property name="mobileWidth" label="Mobile Override - Fixed width" description="A fixed width this column should have. Use this with column span empty" type="String" />
+            <property name="mobileHeight" label="Mobile Override - Fixed height" description="A fixed height this column should have" type="String" />
+
+            <property name="horizontalAlign" label="Horizontal Alignment" description="Alignment of the content of this grid item" type="String" datasource="Left,Center,Right," default="Left" />
+            <property name="verticalAlign" label="Vertical Alignment" description="Alignment of the content of this grid item" type="String" datasource="Top,Center,Bottom" default="Top" />
+            <property name="topMargin" label="Top Margin" type="String" />
+            <property name="bottomMargin" label="Bottom Margin" type="String" />
+
+            <property name="gutters" label="-" type="String" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
